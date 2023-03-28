@@ -6,11 +6,11 @@ class BuggyReproService extends cds.ApplicationService {
         this.on('postWeatherData', async (req) => {
 
             // determine url parameters from request
-            const urlParams = req._.req.query
+            // const urlParams = req._.req.query
+            const   urlParams = { weatherTempOutdoorCelsius: '32.2' }
 
             // Output trigger information to console
             console.log('Meteobridge request received.', urlParams);
-
 
             // Establish connection to CDS Service
             const serviceIotPush = await cds.connect.to('AdminService')
