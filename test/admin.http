@@ -1,0 +1,11 @@
+
+####
+POST http://localhost:4004/admin/IotMessages
+Content-Type: application/json
+
+{
+  "weatherTempOutdoorCelsius": "38.5"
+}
+
+####
+GET http://localhost:4004/admin/IotMessages
