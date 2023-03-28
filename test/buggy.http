@@ -1,0 +1,5 @@
+
+
+## Reproduction of format from weather station
+###
+GET http://localhost:4004/mb/postWeatherData()?weatherTempOutdoorCelsius=32.2
