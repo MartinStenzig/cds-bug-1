@@ -9,3 +9,9 @@ Content-Type: application/json
 
 ####
 GET http://localhost:4004/admin/IotMessages
+
+####
+POST http://localhost:4004/hcql/IotMessages
+Content-Type: application/json
+
+{"SELECT":{"from":[{"ref":["IotMessages"]}]}}

@@ -19,6 +19,9 @@ class BuggyReproService extends cds.ApplicationService {
             const { IotMessages } = serviceIotPush.entities();
             //console.log('IotMessages: ', IotMessages)
 
+            const selectStatement = SELECT.from(IotMessages);
+            console.log(selectStatement)
+
             const insertStatement = INSERT.into(IotMessages, urlParams);
             //console.log('Insert Statement: ', insertStatement)
 
